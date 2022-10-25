@@ -1,91 +1,208 @@
-<html>
-<head>
-<title>Web app development - Lab 1 </title>
-<style>
+* {
+  font-family: 'Space Mono', monospace;
+}
+
 h1 {
-  color: blue;
-  font-family: cambria;
-  font-size: 200%;
+  color: hsl(183, 100%, 15%);
+}
+
+h2 {
+  font-size: 0.91em;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  }
+
+#body {
+  padding-top: 5%;
   text-align: center;
 }
-p {
-  color: red;
-  font-family: courier;
-  font-size: 120%;
-  background-image: url('projectdelivery.jpg');
 
-}
-table, th, td {
-  border:1px solid black;
+#calculator {
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  height: 500px;
+  text-align: left;
+  border-radius: 15px;
+  padding: 5px;
+  }
 
+#input {
+  margin: 5%;
+  height: 85%;
+  float: left;
+  width: 40%;
+  }
+
+#input h2 {
+  color: hsl(186, 14%, 43%);
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
- tr
-    {
-      background-color:gray;
-      color:white;
-    }
-    th
-    {
-      background-color:yellow;
-      color:black;
-    }
-	td{
-	  border height: 120;
-	  }
-body{
-background-image: url("https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95d2d9f93.png");
-background-size: cover;
-background-repeat: no-repeat;
+
+#input i {
+  position: absolute;
+  color: hsl(184, 14%, 56%);
 }
-</style>
-</head>
-<body>
-<h1>This is the table of content</h1>
-<table style="width:100%; margin-top:50px; margin-left:50px;">
-  <tr>
-    <th>Index no.</th>
-    <th>Content</th>
-  </tr>
-  <tr>
-    <td style="text-align:center">1</td>
-    <td>Course Introduction & Syllabus Review</td>
-  </tr>
-  <tr>
-    <td style="text-align:center">2</td>
-    <td>Web History and Introduction to the Triad of Core Technologies</td>
-  </tr>
-  <tr>
-    <td style="text-align:center">3</td>
-    <td>Development Tools</td>
-  </tr>
-<tr>
-    <td style="text-align:center">4</td>
-    <td>HTTP Protocol and Request/Response Cycle</td>
-  </tr>
-  <tr>
-    <td style="text-align:center">5</td>
-    <td>Git version control and GitHub</td>
-  </tr>
-  <tr>
-    <td style="text-align:center">6</td>
-    <td>HTML and CSS Essentials</td>
-  </tr>
-  <tr>
-    <td style="text-align:center">7</td>
-    <td>CSS3 Techniques</td>
-  </tr>
-   <tr>
-    <td style="text-align:center">8</td>
-    <td>CSS Layout</td>
-  </tr>
-  <tr>
-    <td style="text-align:center">9</td>
-    <td>Responsive Design</td>
-  </tr>
-  <tr>
-    <td style="text-align:center">10</td>
-    <td>CSS Transitions, Transforms, Animations</td>
-  </tr>
-</table>
-</body>
- </html>
+
+.bar-input {
+  background-color: hsl(189, 41%, 97%);
+  padding: 7px;
+  width: 100%;
+  text-align: right;
+  color: hsl(186, 14%, 43%);
+  border: 0px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.icon {
+  padding: 0.6em;
+}
+
+.perc-button {
+  width: 25%;
+  padding: 2%;
+  border: none;
+  margin: 2%;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  }
+
+.perc-input {
+  background-color: hsl(189, 41%, 97%);
+  width: 21.5%;
+  padding: 2%;
+  border: none;
+  margin: 2%;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: hsl(186, 14%, 43%);
+}
+
+#percent-sign {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: hsl(186, 14%, 43%);
+}
+
+#output {
+  float: left;
+  width: 40%;
+  height: 85%;
+  background-color: hsl(183, 100%, 15%);
+  margin: 5%;
+  border-radius: 15px;
+}
+
+#table-result {
+  padding-top: 15%;
+  padding-bottom: 10%;
+  width: 80%;
+  margin: auto;
+}
+
+#result-table {
+  color: white;
+  width: 100%;
+  /*border-collapse: collapse;*/
+  }
+
+#reset {
+  position: relative;
+}
+
+#button-reset {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  padding-top: 30%;
+}
+
+.reset-button {
+  background-color: hsl(172, 67%, 45%);
+  border: 0px;
+  width: 100%;
+  border-radius: 5px;
+  line-height: 2em;
+  color: hsl(183, 100%, 15%);
+  font-size: 1.5em;
+  opacity: 0.2;
+}
+
+.tip-result {
+  font-size: 3.5vw;
+  text-align: right;
+  color: hsl(172, 67%, 45%);
+}
+
+.row-buffer {
+  height: 3em;
+}
+
+td {
+  line-height: 0.6em;
+}
+
+.cell-heading {
+  font-size: 1em;
+}
+
+.cell-subheading {
+  font-size: 0.81em;
+  color: hsl(184, 14%, 56%);
+  }
+
+  @media only screen and (max-width: 900px) {
+    #wrapper {
+      margin: auto;
+    }
+
+
+    #calculator {
+      width: 100%;
+      margin: auto;
+      height: 70%;
+    }
+
+    #input {
+      width: 90%;
+      height: 30%;
+      float: none;
+    }
+
+    #output {
+      width: 90%;
+      height: 30%;
+      margin: auto;
+      /*border: solid red 5px;*/
+      float: none;
+    }
+
+    #button-reset {
+      margin: auto;
+      width: 80%;
+      text-align: center;
+      padding-bottom: 5%;
+      padding-top: 5%;
+    }
+
+    #table-result {
+      padding-top: 15%;
+      padding-bottom: 0%;
+      width: 80%;
+      margin: auto;
+    }
+
+    .tip-result {
+      font-size: 2em;
+    }
+  }
